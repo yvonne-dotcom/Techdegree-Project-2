@@ -1,0 +1,183 @@
+/* Header Styles
+.nav{
+    float: right;
+}
+li{
+    display: inline-block;
+}
+*/
+
+/* === Media Queries===
+@media (min-width: 320px) {
+    .header{
+        background-color: lightgreen;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+
+
+    }
+
+}
+*/
+body{
+    padding: 5%;
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+.profile-pic{
+    margin-top: 50px;
+}
+li{
+    list-style: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px;
+    margin-bottom: 5px;
+    background-color: rgb(255, 255, 255);
+}
+ul{
+    padding-left: 0;
+}
+.title{
+    font-size: 35px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(85, 83, 83);
+}
+
+a.top{
+    margin: 16px 0;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: teal;
+}
+.bio{
+    color: rgb(182, 180, 180);
+}
+.portfolio-container{
+    color: rgb(85, 83, 83);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.project{
+    padding-bottom: 25px;
+}
+
+.contact-container,
+footer{
+    color: rgb(85, 83, 83);
+}
+
+.contact-info{
+    font-weight: 500;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-top: 80px;
+    border-top: solid 2px rgb(238, 240, 243);
+}
+
+/* Media Queries for ipad (768px)*/
+
+@media screen and (min-width: 768px){
+    .nav{
+        margin: auto;
+        display: flex;
+        width: 297px;
+    }
+
+    .section-1{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 30px;
+    }
+
+    .profile-pic{
+        margin-top: 0;
+        padding-left: 8px;
+    }
+
+    .bio{
+        text-align: left;
+        line-height: 20px;
+    }
+    
+    .project{
+        float: left;
+        width: 45%;
+        margin: auto;
+    }
+    .project:nth-child(even){
+        margin-right: 7%;
+    }
+
+    .project img{
+        max-width: 100%;
+    }
+
+    .profile-text{
+        padding: 0 25px;
+    }
+
+    .contact-container{
+        max-width: 65%;
+        margin: auto;
+        display: inline-block;
+    }
+}
+
+/* Media Queries for laptop (1024px)*/
+
+@media screen and (min-width: 1024px){
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav{
+        margin: initial;
+        align-items: center;
+    }
+
+    .bio{
+        font-size: 23px;
+        padding-right: 60px;
+    }
+    .project{
+        float: left;
+        width: 27%;
+    }
+
+    .project:nth-child(even),
+    .project:nth-child(odd){
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .profile-text{
+        padding: 0 5px;
+    }
+
+    .contact-container{
+        max-width: 45%;
+        margin: auto;
+        display: inline-block;
+    }
+
+}
